@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+
+// Class representing a Bogie
+class Bogie {
+    String type;
+
+    // Constructor
+    Bogie(String type) {
+        this.type = type;
+    }
+
+    // Method to display bogie details
+    void display() {
+        System.out.println("Bogie Type: " + type);
+    }
+}
+
+// Main Train Application Class
+public class train_managment {
+
+    public static void main(String[] args) {
+
+        // Welcome message
+        System.out.println("===================================");
+        System.out.println(" Welcome to Train Consist Manager ");
+        System.out.println("===================================");
+
+        // Initialize train consist using ArrayList
+        ArrayList<Bogie> trainConsist = new ArrayList<>();
+
+        // Adding some initial bogies
+        trainConsist.add(new Bogie("Sleeper"));
+        trainConsist.add(new Bogie("AC Chair"));
+        trainConsist.add(new Bogie("First Class"));
+
+        // Display initial bogie count
+        System.out.println("\nTrain consist initialized successfully!");
+        System.out.println("Initial number of bogies: " + trainConsist.size());
+
+        // Display details of each bogie
+        System.out.println("\nBogie Details:");
+        for (Bogie b : trainConsist) {
+            b.display();
+        }
+
+        // Program continues...
+        System.out.println("\nSystem is ready for further operations...");
+    }
+}

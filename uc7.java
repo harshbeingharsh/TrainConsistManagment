@@ -5,7 +5,7 @@
  * Description:
  * This class demonstrates sorting of passenger bogies
  * using Comparator based on seating capacity.
- * author Shivansh
+ 
  */
 
 import java.util.ArrayList;

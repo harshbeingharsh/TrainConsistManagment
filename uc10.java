@@ -5,7 +5,6 @@
  * Description:
  * Demonstrates aggregation of bogie seating capacity
  * using Stream API and reduce() method.
- * author shivansh dhingra
  */
 
 import java.util.ArrayList;
